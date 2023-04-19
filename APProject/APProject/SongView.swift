@@ -56,9 +56,9 @@ struct SongView: View {
                                 
                             }
                             HStack{
-                                NavigationLink(destination: DetailView(name: songs[index].songName, artist: songs[index].releaseDate, imageURL: songs[index].artworkUrl100)){
+                                NavigationLink(destination: DetailView(name: songs[index].songName, artist}: songs[index].releaseDate, imageURL: songs[index].artworkUrl100))
                                    
-                                    {
+                                
                                         VStack {
                                             Text("Want too hear a song clip?")
                                                 .font(.subheadline)
@@ -72,7 +72,7 @@ struct SongView: View {
                                         Image(systemName: "music.note")
                                             .padding()
                                             .foregroundColor(Color("AccentColor"))
-                                    }
+                                    
                                 }
                             }
                         }
@@ -89,8 +89,8 @@ struct SongView: View {
             }
             
         }
-    }
-}
+    
+
 
         struct SongView_Previews: PreviewProvider {
             static var previews: some View {

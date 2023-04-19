@@ -16,6 +16,13 @@
 		D105797129E3879A00734C6B /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105797029E3879A00734C6B /* Functions.swift */; };
 		D105797329E3886900734C6B /* progressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105797229E3886900734C6B /* progressBar.swift */; };
 		D105797529E7851000734C6B /* SongStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105797429E7851000734C6B /* SongStruct.swift */; };
+		D166647229F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647129F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 */; };
+		D166647429F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647329F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 */; };
+		D166647829F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647729F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 */; };
+		D166647A29F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647929F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 */; };
+		D166647C29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */; };
+		D166647E29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */; };
+		D166648029F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,13 @@
 		D105797029E3879A00734C6B /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		D105797229E3886900734C6B /* progressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressBar.swift; sourceTree = "<group>"; };
 		D105797429E7851000734C6B /* SongStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongStruct.swift; sourceTree = "<group>"; };
+		D166647129F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3"; sourceTree = "<group>"; };
+		D166647329F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Drake and 21 Savage - Rich Flex Her Loss Recap.mp3"; sourceTree = "<group>"; };
+		D166647729F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Taylor Swift - Anti-Hero (Official Music Video).mp3"; sourceTree = "<group>"; };
+		D166647929F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lil Baby - _Real Spill_ (It's Only Me).mp3"; sourceTree = "<group>"; };
+		D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rod Wave - Jupiter's Diary (Official Audio).mp3"; sourceTree = "<group>"; };
+		D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Babyface Ray - Mob (Official Visualizer).mp3"; sourceTree = "<group>"; };
+		D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,7 @@
 				D105797029E3879A00734C6B /* Functions.swift */,
 				D105797229E3886900734C6B /* progressBar.swift */,
 				D105797429E7851000734C6B /* SongStruct.swift */,
+				D166647029F02D10000B6891 /* MusicFiles */,
 				D105796029E3876900734C6B /* Assets.xcassets */,
 				D105796229E3876900734C6B /* Preview Content */,
 			);
@@ -80,6 +95,20 @@
 				D105796329E3876900734C6B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D166647029F02D10000B6891 /* MusicFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D166647129F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 */,
+				D166647329F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 */,
+				D166647729F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 */,
+				D166647929F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 */,
+				D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */,
+				D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */,
+				D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */,
+			);
+			path = MusicFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +169,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D166648029F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 in Resources */,
 				D105796429E3876900734C6B /* Preview Assets.xcassets in Resources */,
+				D166647429F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 in Resources */,
+				D166647E29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 in Resources */,
 				D105796129E3876900734C6B /* Assets.xcassets in Resources */,
+				D166647829F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 in Resources */,
+				D166647A29F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 in Resources */,
+				D166647229F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 in Resources */,
+				D166647C29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
