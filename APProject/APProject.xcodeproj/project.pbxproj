@@ -23,6 +23,10 @@
 		D166647C29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */; };
 		D166647E29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */; };
 		D166648029F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */; };
+		D166648229F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648129F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 */; };
+		D166648429F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648329F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 */; };
+		D166648629F0352D000B6891 /* SZA - SOS (Audio).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648529F0352D000B6891 /* SZA - SOS (Audio).mp3 */; };
+		D166648A29F0B4DB000B6891 /* SelectedSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166648929F0B4DB000B6891 /* SelectedSongs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rod Wave - Jupiter's Diary (Official Audio).mp3"; sourceTree = "<group>"; };
 		D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Babyface Ray - Mob (Official Visualizer).mp3"; sourceTree = "<group>"; };
 		D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3"; sourceTree = "<group>"; };
+		D166648129F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3"; sourceTree = "<group>"; };
+		D166648329F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3"; sourceTree = "<group>"; };
+		D166648529F0352D000B6891 /* SZA - SOS (Audio).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SZA - SOS (Audio).mp3"; sourceTree = "<group>"; };
+		D166648929F0B4DB000B6891 /* SelectedSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSongs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 				D105797029E3879A00734C6B /* Functions.swift */,
 				D105797229E3886900734C6B /* progressBar.swift */,
 				D105797429E7851000734C6B /* SongStruct.swift */,
+				D166648929F0B4DB000B6891 /* SelectedSongs.swift */,
 				D166647029F02D10000B6891 /* MusicFiles */,
 				D105796029E3876900734C6B /* Assets.xcassets */,
 				D105796229E3876900734C6B /* Preview Content */,
@@ -106,7 +115,10 @@
 				D166647929F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 */,
 				D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */,
 				D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */,
+				D166648129F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 */,
 				D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */,
+				D166648529F0352D000B6891 /* SZA - SOS (Audio).mp3 */,
+				D166648329F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 */,
 			);
 			path = MusicFiles;
 			sourceTree = "<group>";
@@ -175,6 +187,9 @@
 				D166647E29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 in Resources */,
 				D105796129E3876900734C6B /* Assets.xcassets in Resources */,
 				D166647829F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 in Resources */,
+				D166648629F0352D000B6891 /* SZA - SOS (Audio).mp3 in Resources */,
+				D166648429F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 in Resources */,
+				D166648229F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 in Resources */,
 				D166647A29F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 in Resources */,
 				D166647229F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 in Resources */,
 				D166647C29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 in Resources */,
@@ -189,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D105796B29E3877A00734C6B /* SongView.swift in Sources */,
+				D166648A29F0B4DB000B6891 /* SelectedSongs.swift in Sources */,
 				D105797329E3886900734C6B /* progressBar.swift in Sources */,
 				D105796D29E3878400734C6B /* DetailView.swift in Sources */,
 				D105795F29E3876700734C6B /* ContentView.swift in Sources */,

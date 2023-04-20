@@ -8,9 +8,7 @@
 import Foundation
 import SwiftUI
 struct DetailView: View {
-    var name : String
-    var artist: String
-    var imageURL: String
+    @Binding var song: SongStored
  
     var body: some View {
  
@@ -18,7 +16,7 @@ struct DetailView: View {
         VStack{
             ZStack{
                 AsyncImage(
-                    url: URL(string:imageURL)!,
+                    url: URL(string:song.artworkUrl100)!,
                     content: { image in
                         image.resizable()
                             .scaledToFit()
@@ -31,7 +29,7 @@ struct DetailView: View {
                 )
             }
                 Spacer()
-            Text(artist)
+            Text(song.artistName)
                     .fontWeight(.bold)
                     .font(.custom("AmericanTypewriter",
                                   fixedSize: 35))
@@ -50,12 +48,15 @@ struct DetailView: View {
                     .multilineTextAlignment(.center)
             
             Button(action: {}) {
-                Image(systemName: "heart.fill").resizable()
+                Image(systemName: "play.fill").resizable()
+            }
+            Button(action: {}) {
+                Image(systemName: song.liked ? "heart.fill" : "heart").resizable()
             }
   
             .frame(width: 20, height: 20)
             .padding()
-                Text(name)
+            Text(song.songName)
                     .font(.system(size: 20))
                     .minimumScaleFactor(0.005)
                     .frame(maxWidth:.infinity, maxHeight:.infinity)
@@ -70,9 +71,9 @@ struct DetailView: View {
             }
         }
     }
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView(name: songNameTop25[0], artist: artistNameTop25[0], imageURL: artworkUrl100Top25[0])
-    }
-}
+//struct DetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView(name: songNameTop25[0], artist: artistNameTop25[0], imageURL: artworkUrl100Top25[0])
+//    }
+//}
 

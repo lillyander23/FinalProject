@@ -11,91 +11,49 @@ import SwiftUI
 
 struct SongView: View {
     
-@State var songs = SongStored.songs()
-@State var isFavorites: Bool = false
-    //  songs = song. when hit the button to filter
+    @State var songs = SongStored.songs()
+    @State var isFavorites: Bool = false
+    
+    var songsList = songs 
     var body: some View {
         
         NavigationView{
             
             VStack{
                 List(0..<songs.count, id: \.self) { index in
-                    
-                    ZStack{
-                        Rectangle()
-                            .frame(width: .infinity, height: .infinity)
-                            .ignoresSafeArea(.all)
-                        Color("AccentColor2")
-                        //
-                        
-                        
-                        VStack{
-                            
-                            Spacer()
-                            Text(songs[index].artistName) //replace for son
-                                .fontWeight(.bold)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                                .foregroundColor(Color("AccentColor"))
-                            
-                            AsyncImage(
-                                url: URL(string: songs[index].artworkUrl100)!,
-                                content: { image in
-                                    image.resizable()
-                                        .scaledToFit()
-                                        .frame(height:150)
-                                        .cornerRadius(12)
-                                },
-                                placeholder: {
-                                    ProgressView()
-                                }
-                            )
-                            HStack {
-                                Text("Release Date: \(songs[index].releaseDate)")
-                                    .font(.subheadline)
-                                    .foregroundColor(Color("AccentColor"))
-                                
-                            }
-                            HStack{
-                                NavigationLink(destination: DetailView(name: songs[index].songName, artist}: songs[index].releaseDate, imageURL: songs[index].artworkUrl100))
-                                   
-                                
-                                        VStack {
-                                            Text("Want too hear a song clip?")
-                                                .font(.subheadline)
-                                                .foregroundColor(Color("AccentColor"))
-                                                .frame(maxWidth: 450, maxHeight: .infinity, alignment: .leading)
-                                            Text("Click on the music note!")
-                                                .font(.subheadline)
-                                                .foregroundColor(Color("AccentColor"))
-                                                .frame(maxWidth: 450, maxHeight: .infinity, alignment: .leading)
-                                        }
-                                        Image(systemName: "music.note")
-                                            .padding()
-                                            .foregroundColor(Color("AccentColor"))
-                                    
-                                }
-                            }
-                        }
-                        
-                    }
+                    SelectedSongs(song: $songs[index])
                     
                 }
-                .toolbar{
-                    Button(action: {isFavorites.toggle()}){
-                        Text ("Filtered View")
-                        
-                    }
-                }
+                
             }
+            .toolbar{
+                
+                Button("Liked Songs"){
+                    isFavorites.toggle()
+                }
+                    
+                
+                }
+                
+            }
+        .onChange(of: isFavorites) { _ in
+            if isFavorites{
+                songs = SongStored.filtered 
+            }
+        }
             
         }
-    
+    }
 
 
-        struct SongView_Previews: PreviewProvider {
-            static var previews: some View {
-                SongView()
-            }
-        }
-  
+
+
+
+
+struct SongView_Previews: PreviewProvider {
+    static var previews: some View {
+        SongView()
+    }
+}
+
 
