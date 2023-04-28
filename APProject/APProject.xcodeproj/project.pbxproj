@@ -14,18 +14,17 @@
 		D105796B29E3877A00734C6B /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105796A29E3877A00734C6B /* SongView.swift */; };
 		D105796D29E3878400734C6B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105796C29E3878400734C6B /* DetailView.swift */; };
 		D105797129E3879A00734C6B /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105797029E3879A00734C6B /* Functions.swift */; };
-		D105797329E3886900734C6B /* progressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105797229E3886900734C6B /* progressBar.swift */; };
 		D105797529E7851000734C6B /* SongStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105797429E7851000734C6B /* SongStruct.swift */; };
-		D166647229F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647129F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 */; };
-		D166647429F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647329F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 */; };
-		D166647829F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647729F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 */; };
-		D166647A29F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647929F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 */; };
-		D166647C29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */; };
-		D166647E29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */; };
-		D166648029F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */; };
-		D166648229F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648129F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 */; };
-		D166648429F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648329F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 */; };
-		D166648629F0352D000B6891 /* SZA - SOS (Audio).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648529F0352D000B6891 /* SZA - SOS (Audio).mp3 */; };
+		D12DAB3229F9FEAD003243DD /* Anti-Hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D12DAB3129F9FEAD003243DD /* Anti-Hero.mp3 */; };
+		D12DAB3429F9FF52003243DD /* Her Loss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D12DAB3329F9FF52003243DD /* Her Loss.mp3 */; };
+		D166647229F02F50000B6891 /* HEROES & VILLAINS (Heroes Version).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647129F02F50000B6891 /* HEROES & VILLAINS (Heroes Version).mp3 */; };
+		D166647A29F02FB1000B6891 /* Real Spill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647929F02FB1000B6891 /* Real Spill.mp3 */; };
+		D166647C29F02FB6000B6891 /* 7 Day Theory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647B29F02FB6000B6891 /* 7 Day Theory.mp3 */; };
+		D166647E29F0302B000B6891 /* MOB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647D29F0302B000B6891 /* MOB.mp3 */; };
+		D166648029F030A9000B6891 /* Nobody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166647F29F030A9000B6891 /* Nobody.mp3 */; };
+		D166648229F034EC000B6891 /* Está Dañado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648129F034EC000B6891 /* Está Dañado.mp3 */; };
+		D166648429F034FA000B6891 /* Un Verano Sin Ti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648329F034FA000B6891 /* Un Verano Sin Ti.mp3 */; };
+		D166648629F0352D000B6891 /* SOS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648529F0352D000B6891 /* SOS.mp3 */; };
 		D166648A29F0B4DB000B6891 /* SelectedSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166648929F0B4DB000B6891 /* SelectedSongs.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,18 +37,17 @@
 		D105796A29E3877A00734C6B /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 		D105796C29E3878400734C6B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D105797029E3879A00734C6B /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		D105797229E3886900734C6B /* progressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressBar.swift; sourceTree = "<group>"; };
 		D105797429E7851000734C6B /* SongStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongStruct.swift; sourceTree = "<group>"; };
-		D166647129F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3"; sourceTree = "<group>"; };
-		D166647329F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Drake and 21 Savage - Rich Flex Her Loss Recap.mp3"; sourceTree = "<group>"; };
-		D166647729F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Taylor Swift - Anti-Hero (Official Music Video).mp3"; sourceTree = "<group>"; };
-		D166647929F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lil Baby - _Real Spill_ (It's Only Me).mp3"; sourceTree = "<group>"; };
-		D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rod Wave - Jupiter's Diary (Official Audio).mp3"; sourceTree = "<group>"; };
-		D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Babyface Ray - Mob (Official Visualizer).mp3"; sourceTree = "<group>"; };
-		D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3"; sourceTree = "<group>"; };
-		D166648129F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3"; sourceTree = "<group>"; };
-		D166648329F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3"; sourceTree = "<group>"; };
-		D166648529F0352D000B6891 /* SZA - SOS (Audio).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SZA - SOS (Audio).mp3"; sourceTree = "<group>"; };
+		D12DAB3129F9FEAD003243DD /* Anti-Hero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Anti-Hero.mp3"; sourceTree = "<group>"; };
+		D12DAB3329F9FF52003243DD /* Her Loss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Her Loss.mp3"; sourceTree = "<group>"; };
+		D166647129F02F50000B6891 /* HEROES & VILLAINS (Heroes Version).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "HEROES & VILLAINS (Heroes Version).mp3"; sourceTree = "<group>"; };
+		D166647929F02FB1000B6891 /* Real Spill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Real Spill.mp3"; sourceTree = "<group>"; };
+		D166647B29F02FB6000B6891 /* 7 Day Theory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "7 Day Theory.mp3"; sourceTree = "<group>"; };
+		D166647D29F0302B000B6891 /* MOB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MOB.mp3; sourceTree = "<group>"; };
+		D166647F29F030A9000B6891 /* Nobody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Nobody.mp3; sourceTree = "<group>"; };
+		D166648129F034EC000B6891 /* Está Dañado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Está Dañado.mp3"; sourceTree = "<group>"; };
+		D166648329F034FA000B6891 /* Un Verano Sin Ti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Un Verano Sin Ti.mp3"; sourceTree = "<group>"; };
+		D166648529F0352D000B6891 /* SOS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SOS.mp3; sourceTree = "<group>"; };
 		D166648929F0B4DB000B6891 /* SelectedSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSongs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +86,6 @@
 				D105796A29E3877A00734C6B /* SongView.swift */,
 				D105796C29E3878400734C6B /* DetailView.swift */,
 				D105797029E3879A00734C6B /* Functions.swift */,
-				D105797229E3886900734C6B /* progressBar.swift */,
 				D105797429E7851000734C6B /* SongStruct.swift */,
 				D166648929F0B4DB000B6891 /* SelectedSongs.swift */,
 				D166647029F02D10000B6891 /* MusicFiles */,
@@ -109,16 +106,16 @@
 		D166647029F02D10000B6891 /* MusicFiles */ = {
 			isa = PBXGroup;
 			children = (
-				D166647129F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 */,
-				D166647329F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 */,
-				D166647729F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 */,
-				D166647929F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 */,
-				D166647B29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 */,
-				D166647D29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 */,
-				D166648129F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 */,
-				D166647F29F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 */,
-				D166648529F0352D000B6891 /* SZA - SOS (Audio).mp3 */,
-				D166648329F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 */,
+				D166647129F02F50000B6891 /* HEROES & VILLAINS (Heroes Version).mp3 */,
+				D12DAB3329F9FF52003243DD /* Her Loss.mp3 */,
+				D12DAB3129F9FEAD003243DD /* Anti-Hero.mp3 */,
+				D166647929F02FB1000B6891 /* Real Spill.mp3 */,
+				D166647B29F02FB6000B6891 /* 7 Day Theory.mp3 */,
+				D166647D29F0302B000B6891 /* MOB.mp3 */,
+				D166648129F034EC000B6891 /* Está Dañado.mp3 */,
+				D166647F29F030A9000B6891 /* Nobody.mp3 */,
+				D166648529F0352D000B6891 /* SOS.mp3 */,
+				D166648329F034FA000B6891 /* Un Verano Sin Ti.mp3 */,
 			);
 			path = MusicFiles;
 			sourceTree = "<group>";
@@ -181,18 +178,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D166648029F030A9000B6891 /* Finesse2Tymes - Nobody (feat. Gucci Mane) [Official Music Video].mp3 in Resources */,
+				D166648029F030A9000B6891 /* Nobody.mp3 in Resources */,
 				D105796429E3876900734C6B /* Preview Assets.xcassets in Resources */,
-				D166647429F02F66000B6891 /* Drake and 21 Savage - Rich Flex Her Loss Recap.mp3 in Resources */,
-				D166647E29F0302B000B6891 /* Babyface Ray - Mob (Official Visualizer).mp3 in Resources */,
+				D12DAB3429F9FF52003243DD /* Her Loss.mp3 in Resources */,
+				D12DAB3229F9FEAD003243DD /* Anti-Hero.mp3 in Resources */,
+				D166647E29F0302B000B6891 /* MOB.mp3 in Resources */,
 				D105796129E3876900734C6B /* Assets.xcassets in Resources */,
-				D166647829F02FAA000B6891 /* Taylor Swift - Anti-Hero (Official Music Video).mp3 in Resources */,
-				D166648629F0352D000B6891 /* SZA - SOS (Audio).mp3 in Resources */,
-				D166648429F034FA000B6891 /* Bad Bunny - Un Verano Sin Ti (LetraLyrics)  Un Verano Sin Ti.mp3 in Resources */,
-				D166648229F034EC000B6891 /* Ivan Cornejo - Está Dañado - deluxe (Audio Oficial).mp3 in Resources */,
-				D166647A29F02FB1000B6891 /* Lil Baby - _Real Spill_ (It's Only Me).mp3 in Resources */,
-				D166647229F02F50000B6891 /* Metro Boomin & Future - Superhero (Heroes & Villains) [Official Music Video].mp3 in Resources */,
-				D166647C29F02FB6000B6891 /* Rod Wave - Jupiter's Diary (Official Audio).mp3 in Resources */,
+				D166648629F0352D000B6891 /* SOS.mp3 in Resources */,
+				D166648429F034FA000B6891 /* Un Verano Sin Ti.mp3 in Resources */,
+				D166648229F034EC000B6891 /* Está Dañado.mp3 in Resources */,
+				D166647A29F02FB1000B6891 /* Real Spill.mp3 in Resources */,
+				D166647229F02F50000B6891 /* HEROES & VILLAINS (Heroes Version).mp3 in Resources */,
+				D166647C29F02FB6000B6891 /* 7 Day Theory.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +202,6 @@
 			files = (
 				D105796B29E3877A00734C6B /* SongView.swift in Sources */,
 				D166648A29F0B4DB000B6891 /* SelectedSongs.swift in Sources */,
-				D105797329E3886900734C6B /* progressBar.swift in Sources */,
 				D105796D29E3878400734C6B /* DetailView.swift in Sources */,
 				D105795F29E3876700734C6B /* ContentView.swift in Sources */,
 				D105795D29E3876700734C6B /* APProjectApp.swift in Sources */,

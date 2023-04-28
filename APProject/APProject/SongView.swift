@@ -11,49 +11,41 @@ import SwiftUI
 
 struct SongView: View {
     
-    @State var songs = SongStored.songs()
+    @State var allSongs = SongStored.songs(filtered: false)
     @State var isFavorites: Bool = false
     
-    var songsList = songs 
+    var songs: [SongStored] {
+        return SongStored.filter(songs: allSongs, liked: isFavorites)
+    }
+    
     var body: some View {
         
         NavigationView{
             
             VStack{
                 List(0..<songs.count, id: \.self) { index in
-                    SelectedSongs(song: $songs[index])
-                    
+                    SelectedSongs(song:
+                                    Binding(
+                                        get: { songs[index] },
+                                        set: {
+                                            let index = allSongs.firstIndex { $0.id == songs[index].id }!
+                                            allSongs[index] = $0
+                                        }
+                                    )
+                    )
                 }
                 
             }
             .toolbar{
-                
-                Button("Liked Songs"){
+                Button(isFavorites ? "All Songs" : "Liked Songs"){
                     isFavorites.toggle()
                 }
-                    
-                
-                }
-                
-            }
-        .onChange(of: isFavorites) { _ in
-            if isFavorites{
-                songs = SongStored.filtered 
             }
         }
-            
-        }
     }
-
-
-
-
-
-
-struct SongView_Previews: PreviewProvider {
-    static var previews: some View {
-        SongView()
-    }
+    
 }
+
+
 
 

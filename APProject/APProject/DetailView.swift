@@ -6,12 +6,18 @@
 //
 
 import Foundation
+import AVFoundation
 import SwiftUI
+
 struct DetailView: View {
+    
     @Binding var song: SongStored
+    
+    @State var isPlaying = false
  
     var body: some View {
- 
+       
+        
         NavigationView{
         VStack{
             ZStack{
@@ -47,10 +53,19 @@ struct DetailView: View {
                     .frame(maxWidth: 350, maxHeight: 50)
                     .multilineTextAlignment(.center)
             
-            Button(action: {}) {
-                Image(systemName: "play.fill").resizable()
+            Button(action: {
+                isPlaying.toggle()
+                if isPlaying {
+                    playSong()
+                } else {
+                    stopSong()
+                }
+            }) {
+                Image(systemName: isPlaying ? "pause" : "play.fill").resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 20.0, height: 20.0)
             }
-            Button(action: {}) {
+            Button(action: { song.liked.toggle() }) {
                 Image(systemName: song.liked ? "heart.fill" : "heart").resizable()
             }
   
@@ -70,10 +85,14 @@ struct DetailView: View {
        
             }
         }
+    
+    func playSong() {
+        APProjectApp.playSong(song: song)
     }
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailView(name: songNameTop25[0], artist: artistNameTop25[0], imageURL: artworkUrl100Top25[0])
-//    }
-//}
+    
+    func stopSong() {
+        APProjectApp.stopSong()
+    }
+}
+
 

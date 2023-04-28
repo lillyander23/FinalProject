@@ -20,7 +20,7 @@ struct ContentView: View {
                         .frame(maxWidth: 350, maxHeight:200)
                     
                         .clipShape(Capsule())
-                    Text("Top 10 Song Hits of 2022!!")
+                    Text("My Top Songs of 2022")
                         .font(.custom("Apple SD Gothic Neo Heavy",
                                       fixedSize: 34))
                         .foregroundColor(Color("AccentColor2"))

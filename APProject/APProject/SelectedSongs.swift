@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct SelectedSongs: View{
+    
   @Binding var song: SongStored
+    
     var body: some View{
         
+//ADD TITLE
+        
         ZStack{
-            Rectangle()
-                .frame(width: .infinity, height: .infinity)
-                .ignoresSafeArea(.all)
-            Color("AccentColor2")
-            //
-            
-            
+        
             VStack{
                 
-                Spacer()
-                Text(song.artistName) //replace for son
+       
+                Text(song.artistName)
                     .fontWeight(.bold)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                    .foregroundColor(Color("AccentColor"))
+                Spacer()
+                Text(song.songName)
+                    .fontWeight(.semibold)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                     .foregroundColor(Color("AccentColor"))
                 
@@ -45,6 +48,8 @@ struct SelectedSongs: View{
                         .foregroundColor(Color("AccentColor"))
                     
                 }
+               
+                }
                 HStack{
                     NavigationLink {
                         DetailView(song:$song)
@@ -52,12 +57,17 @@ struct SelectedSongs: View{
                         Text("")
                     }
                     
-                    
+             
+                        
+                        
+                    }
                     
                 }
+                
             }
             
         }
         
-    }
-}
+    
+    
+

@@ -5,13 +5,13 @@
 //  Created by Lillian Anderson23 on 4/9/23.
 //
 
-
-import Foundation
-
+//
+//import Foundation
+//
 import SwiftUI
-
+//
 func changeColor(count: Int) -> Color {
-    
+
     if count == 0 {
         return .gray
     }
@@ -20,7 +20,7 @@ func changeColor(count: Int) -> Color {
     }
         return .gray
     }
-    
+
 
     func updateColor(count: Int) -> Int {
         if count == 0{
@@ -34,4 +34,5 @@ func changeColor(count: Int) -> Color {
         }
         return 0
     }
+
 
