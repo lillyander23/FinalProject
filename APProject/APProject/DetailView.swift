@@ -11,7 +11,7 @@ import SwiftUI
 
 struct DetailView: View {
     
-    @Binding var song: SongStored
+    @Binding var song: SongStored //once again creating a connection between SongStored and DetailView 
     
     @State var isPlaying = false
  
@@ -53,7 +53,7 @@ struct DetailView: View {
                     .frame(maxWidth: 350, maxHeight: 50)
                     .multilineTextAlignment(.center)
             
-            Button(action: {
+            Button(action: { //attaches an action to the play and pause button through the variable isPlaying
                 isPlaying.toggle()
                 if isPlaying {
                     playSong()
@@ -61,12 +61,12 @@ struct DetailView: View {
                     stopSong()
                 }
             }) {
-                Image(systemName: isPlaying ? "pause" : "play.fill").resizable()
+                Image(systemName: isPlaying ? "pause" : "play.fill").resizable() //this displays the play and pause button and uses the variable isPlaying
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 20.0, height: 20.0)
             }
             Button(action: { song.liked.toggle() }) {
-                Image(systemName: song.liked ? "heart.fill" : "heart").resizable()
+                Image(systemName: song.liked ? "heart.fill" : "heart").resizable() //this displays the heart button and uses the variable song to pass in songStored
             }
   
             .frame(width: 20, height: 20)
@@ -79,7 +79,7 @@ struct DetailView: View {
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .padding(15)
-//            Slider()
+
                    
             }
        
@@ -87,11 +87,11 @@ struct DetailView: View {
         }
     
     func playSong() {
-        APProjectApp.playSong(song: song)
+        APProjectApp.playSong(song: song) //this calls the Static func playSong in APProjectApp view
     }
     
     func stopSong() {
-        APProjectApp.stopSong()
+        APProjectApp.stopSong() //this calls the Static func stopSong in APProjectApp view
     }
 }
 

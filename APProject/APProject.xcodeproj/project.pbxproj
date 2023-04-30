@@ -13,7 +13,6 @@
 		D105796429E3876900734C6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D105796329E3876900734C6B /* Preview Assets.xcassets */; };
 		D105796B29E3877A00734C6B /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105796A29E3877A00734C6B /* SongView.swift */; };
 		D105796D29E3878400734C6B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105796C29E3878400734C6B /* DetailView.swift */; };
-		D105797129E3879A00734C6B /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105797029E3879A00734C6B /* Functions.swift */; };
 		D105797529E7851000734C6B /* SongStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105797429E7851000734C6B /* SongStruct.swift */; };
 		D12DAB3229F9FEAD003243DD /* Anti-Hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D12DAB3129F9FEAD003243DD /* Anti-Hero.mp3 */; };
 		D12DAB3429F9FF52003243DD /* Her Loss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D12DAB3329F9FF52003243DD /* Her Loss.mp3 */; };
@@ -36,7 +35,6 @@
 		D105796329E3876900734C6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D105796A29E3877A00734C6B /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 		D105796C29E3878400734C6B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		D105797029E3879A00734C6B /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		D105797429E7851000734C6B /* SongStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongStruct.swift; sourceTree = "<group>"; };
 		D12DAB3129F9FEAD003243DD /* Anti-Hero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Anti-Hero.mp3"; sourceTree = "<group>"; };
 		D12DAB3329F9FF52003243DD /* Her Loss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Her Loss.mp3"; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				D105795E29E3876700734C6B /* ContentView.swift */,
 				D105796A29E3877A00734C6B /* SongView.swift */,
 				D105796C29E3878400734C6B /* DetailView.swift */,
-				D105797029E3879A00734C6B /* Functions.swift */,
 				D105797429E7851000734C6B /* SongStruct.swift */,
 				D166648929F0B4DB000B6891 /* SelectedSongs.swift */,
 				D166647029F02D10000B6891 /* MusicFiles */,
@@ -205,7 +202,6 @@
 				D105796D29E3878400734C6B /* DetailView.swift in Sources */,
 				D105795F29E3876700734C6B /* ContentView.swift in Sources */,
 				D105795D29E3876700734C6B /* APProjectApp.swift in Sources */,
-				D105797129E3879A00734C6B /* Functions.swift in Sources */,
 				D105797529E7851000734C6B /* SongStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

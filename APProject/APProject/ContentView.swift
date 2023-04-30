@@ -28,7 +28,7 @@ struct ContentView: View {
                         
                         .multilineTextAlignment(.center)
                    
-                    NavigationLink(destination: SongView()){
+                    NavigationLink(destination: SongView()){ //connects ContentView to SongView
                         HStack{
                             Text("Click here \n for the next slide:")
                                 .font(.custom("Apple SD Gothic Neo Heavy",
@@ -39,9 +39,8 @@ struct ContentView: View {
                                 .multilineTextAlignment(.center)
                             Image(systemName: "music.note")
                                 .foregroundColor(Color("AccentColor2"))
-                                
                                 .scaleEffect(1.5)
-                                .offset(y: 12)
+                                .offset(y: 12) //allows music note to move without changing the position of the other elements of the screen
                         }
                     }
                 }
