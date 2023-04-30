@@ -13,8 +13,8 @@ struct SelectedSongs: View{
     
     var body: some View{
         
-//ADD TITLE
-        
+
+        //used to store the details of songView
         ZStack{
         
             VStack{

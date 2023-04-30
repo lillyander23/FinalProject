@@ -16,7 +16,7 @@ struct SongStored {
     var artworkUrl100: String
     var liked: Bool
     
-    init(id: UUID = UUID(), artistName: String, songName: String, releaseDate: String, artworkUrl100: String, liked: Bool) {
+    init(id: UUID = UUID(), artistName: String, songName: String, releaseDate: String, artworkUrl100: String, liked: Bool) { //initilized the values used in SongStored
         self.id = id
         self.artistName = artistName
         self.songName = songName
@@ -26,7 +26,7 @@ struct SongStored {
     }
     
     
-    static func songs(filtered: Bool) -> [SongStored]{
+    static func songs(filtered: Bool) -> [SongStored]{ //creates the function that rotates through the values in songs which appears in the unfilteredview
         
         var top25Songs: [SongStored] = []
         
@@ -39,7 +39,7 @@ struct SongStored {
     }
     
     
-    static func filter(songs: [SongStored], liked: Bool) -> [SongStored] {
+    static func filter(songs: [SongStored], liked: Bool) -> [SongStored] { //creates the function that filters the songs through the liked bool and the function songs, makes it possible to like a song and then click on a button to view the new filtered view, connects songs with either being liked or untouched 
         
         if liked {
             
