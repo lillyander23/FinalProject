@@ -25,6 +25,8 @@
 		D166648429F034FA000B6891 /* Un Verano Sin Ti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648329F034FA000B6891 /* Un Verano Sin Ti.mp3 */; };
 		D166648629F0352D000B6891 /* SOS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D166648529F0352D000B6891 /* SOS.mp3 */; };
 		D166648A29F0B4DB000B6891 /* SelectedSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D166648929F0B4DB000B6891 /* SelectedSongs.swift */; };
+		D1B2CAC12A03F9BE00EFD872 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B2CAC02A03F9BE00EFD872 /* MusicManager.swift */; };
+		D1B2CAC32A0422E500EFD872 /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B2CAC22A0422E500EFD872 /* SongData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		D166648329F034FA000B6891 /* Un Verano Sin Ti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Un Verano Sin Ti.mp3"; sourceTree = "<group>"; };
 		D166648529F0352D000B6891 /* SOS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SOS.mp3; sourceTree = "<group>"; };
 		D166648929F0B4DB000B6891 /* SelectedSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSongs.swift; sourceTree = "<group>"; };
+		D1B2CAC02A03F9BE00EFD872 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		D1B2CAC22A0422E500EFD872 /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				D105795C29E3876700734C6B /* APProjectApp.swift */,
-				D105795E29E3876700734C6B /* ContentView.swift */,
-				D105796A29E3877A00734C6B /* SongView.swift */,
-				D105796C29E3878400734C6B /* DetailView.swift */,
-				D105797429E7851000734C6B /* SongStruct.swift */,
-				D166648929F0B4DB000B6891 /* SelectedSongs.swift */,
+				D1B2CABD2A03F50B00EFD872 /* Views */,
+				D1B2CABF2A03F97200EFD872 /* Controller  */,
+				D1B2CABE2A03F96B00EFD872 /* Models */,
 				D166647029F02D10000B6891 /* MusicFiles */,
 				D105796029E3876900734C6B /* Assets.xcassets */,
 				D105796229E3876900734C6B /* Preview Content */,
@@ -115,6 +117,34 @@
 				D166648329F034FA000B6891 /* Un Verano Sin Ti.mp3 */,
 			);
 			path = MusicFiles;
+			sourceTree = "<group>";
+		};
+		D1B2CABD2A03F50B00EFD872 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D105795E29E3876700734C6B /* ContentView.swift */,
+				D105796A29E3877A00734C6B /* SongView.swift */,
+				D105796C29E3878400734C6B /* DetailView.swift */,
+				D166648929F0B4DB000B6891 /* SelectedSongs.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1B2CABE2A03F96B00EFD872 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D105797429E7851000734C6B /* SongStruct.swift */,
+				D1B2CAC22A0422E500EFD872 /* SongData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1B2CABF2A03F97200EFD872 /* Controller  */ = {
+			isa = PBXGroup;
+			children = (
+				D1B2CAC02A03F9BE00EFD872 /* MusicManager.swift */,
+			);
+			path = "Controller ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D105796B29E3877A00734C6B /* SongView.swift in Sources */,
+				D1B2CAC12A03F9BE00EFD872 /* MusicManager.swift in Sources */,
+				D1B2CAC32A0422E500EFD872 /* SongData.swift in Sources */,
 				D166648A29F0B4DB000B6891 /* SelectedSongs.swift in Sources */,
 				D105796D29E3878400734C6B /* DetailView.swift in Sources */,
 				D105795F29E3876700734C6B /* ContentView.swift in Sources */,

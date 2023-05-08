@@ -10,7 +10,7 @@ import AVFoundation
 import SwiftUI
 
 struct DetailView: View {
-    
+    @EnvironmentObject var musicManager: MusicManager
     @Binding var song: SongStored //once again creating a connection between SongStored and DetailView 
     
     @State var isPlaying = false
@@ -30,7 +30,8 @@ struct DetailView: View {
                             .cornerRadius(30)
                     },
                     placeholder: {
-                        SongView()
+                        ProgressView()
+                        
                     }
                 )
             }
@@ -56,14 +57,16 @@ struct DetailView: View {
             Button(action: { //attaches an action to the play and pause button through the variable isPlaying
                 isPlaying.toggle()
                 if isPlaying {
-                    playSong()
+                    musicManager.playSong(song: song)
                 } else {
-                    stopSong()
+                    musicManager.stopSong()
                 }
             }) {
                 Image(systemName: isPlaying ? "pause" : "play.fill").resizable() //this displays the play and pause button and uses the variable isPlaying
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 20.0, height: 20.0)
+                
+                
             }
             Button(action: { song.liked.toggle() }) {
                 Image(systemName: song.liked ? "heart.fill" : "heart").resizable() //this displays the heart button and uses the variable song to pass in songStored
@@ -86,13 +89,6 @@ struct DetailView: View {
             }
         }
     
-    func playSong() {
-        APProjectApp.playSong(song: song) //this calls the Static func playSong in APProjectApp view
-    }
-    
-    func stopSong() {
-        APProjectApp.stopSong() //this calls the Static func stopSong in APProjectApp view
-    }
 }
 
 
