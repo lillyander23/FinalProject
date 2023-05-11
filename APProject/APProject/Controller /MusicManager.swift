@@ -48,6 +48,10 @@ class MusicManager: ObservableObject{
             return allSongs
         }
     }
+    
+    func getIndex(song: SongStored){
+        // Figure out the index of the song we want to play in allSongs
+    }
 
     
     

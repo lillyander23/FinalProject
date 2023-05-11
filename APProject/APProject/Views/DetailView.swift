@@ -10,7 +10,7 @@ import AVFoundation
 import SwiftUI
 
 struct DetailView: View {
-    @EnvironmentObject var musicManager: MusicManager
+    @ObservedObject var musicManager: MusicManager
     @Binding var song: SongStored //once again creating a connection between SongStored and DetailView 
     
     @State var isPlaying = false

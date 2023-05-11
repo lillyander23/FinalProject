@@ -87,7 +87,7 @@ import SwiftUI
 
 //ORIGINAL CODE
 struct SongView: View {
-    @EnvironmentObject var musicManager : MusicManager
+    @StateObject var musicManager = MusicManager()
     @State var isFavorites: Bool = false
             
     var body: some View {
@@ -96,11 +96,13 @@ struct SongView: View {
             let songs = musicManager.songs(filtered:false)
             VStack{
                 List(0..<songs.count, id: \.self) { index in
-                    SelectedSongs(song:
+                    SelectedSongs(musicManager: musicManager, song:
                                     Binding( //created custom binding to connect SelectedSongs SongStored and SongView so they can store and pass data and display changes to that data on the SongView, followed this to create the custom binding https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-custom-bindings, this allowed the function filtered to function
                                         get: { songs[index] },
                                         set: {
-                                            let index = musicManager.allSongs.firstIndex { $0.id == songs[index].id }!
+                                            print(songs[index].id)
+                                            print(
+                                            let index = musicManager.allSongs.firstIndex { $0.id == songs[index].id }! //error occours when heart is liked
                                             musicManager.allSongs[index] = $0
                                         }
                                     )

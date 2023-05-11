@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SelectedSongs: View{
+    @ObservedObject var musicManager : MusicManager
     
   @Binding var song: SongStored
     
@@ -52,7 +53,7 @@ struct SelectedSongs: View{
                 }
                 HStack{
                     NavigationLink {
-                        DetailView(song:$song)
+                        DetailView(musicManager: musicManager, song:$song)
                     } label: {
                         Text("")
                     }
