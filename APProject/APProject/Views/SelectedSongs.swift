@@ -19,20 +19,19 @@ struct SelectedSongs: View{
         ZStack{
         
             VStack{
-                
-       
-                Text(musicManager.allSongs[index].artistName)
+               
+                Text(musicManager.songs[index].artistName)
                     .fontWeight(.bold)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                     .foregroundColor(Color("AccentColor"))
                 Spacer()
-                Text(musicManager.allSongs[index].songName)
+                Text(musicManager.songs[index].songName)
                     .fontWeight(.semibold)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                     .foregroundColor(Color("AccentColor"))
                 
                 AsyncImage(
-                    url: URL(string:musicManager.allSongs[index].artworkUrl100)!,
+                    url: URL(string:musicManager.songs[index].artworkUrl100)!,
                     content: { image in
                         image.resizable()
                             .scaledToFit()
@@ -44,7 +43,7 @@ struct SelectedSongs: View{
                     }
                 )
                 HStack {
-                    Text("Release Date: \(musicManager.allSongs[index].releaseDate)")
+                    Text("Release Date: \(musicManager.songs[index].releaseDate)")
                         .font(.subheadline)
                         .foregroundColor(Color("AccentColor"))
                     
@@ -64,6 +63,9 @@ struct SelectedSongs: View{
                     }
                     
                 }
+        .onAppear{
+            print(index)
+        }
                 
             }
             

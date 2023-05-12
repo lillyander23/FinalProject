@@ -15,23 +15,14 @@ struct SongView: View {
     @State var isFavorites: Bool = false
             
     var body: some View {
-        VStack{
-            if isFavorites {
-                
-                musicManager.filter(liked: true)
+
                 VStack{
                     List(0..<musicManager.songs.count, id: \.self) { index in
                         SelectedSongs(musicManager: musicManager, index: index)
                     }
                     
                 }
-                
-            }else{
-                musicManager.filter(liked:false)
-                VStack{
-                    List(0..<musicManager.songs.count, id: \.self) { index in
-                        SelectedSongs(musicManager: musicManager, index: index
-                                      //                                    Binding( //created custom binding to connect SelectedSongs SongStored and SongView so they can store and pass data and display changes to that data on the SongView, followed this to create the custom binding https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-custom-bindings, this allowed the function filtered to function
+                //                                    Binding( //created custom binding to connect SelectedSongs SongStored and SongView so they can store and pass data and display changes to that data on the SongView, followed this to create the custom binding https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-custom-bindings, this allowed the function filtered to function
                                       //                                        get: { songs[index] },
                                       //                                        set: {
                                       ////                                            print(songs[index].id)
@@ -40,17 +31,15 @@ struct SongView: View {
                                       //                                        }
                                       //                                    )
                                       
-                        )
-                    }
-                    
-                }
-            }
-        }
             .toolbar{
                 Button(isFavorites ? "All Songs" : "Liked Songs"){ //this button is the toggle between the filtered and unfiltered view
                     isFavorites.toggle()
+                    musicManager.filter(liked: isFavorites)
                 }
             }
+            .onAppear{
+
+                musicManager.filter(liked: isFavorites)}
     }
 
 }

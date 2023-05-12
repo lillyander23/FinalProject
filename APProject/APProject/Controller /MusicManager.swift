@@ -37,12 +37,14 @@ class MusicManager: ObservableObject{
         if liked {
             print("filtering")
            
-            
+            songs = []
             for song in allSongs {
                 if song.liked == true{
                     self.songs.append(song)
+
                 }
             }
+            print(songs.count)
         } else {
             print("not filtering")
             self.songs = allSongs
