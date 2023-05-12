@@ -11,18 +11,17 @@ import SwiftUI
 
 struct DetailView: View {
     @ObservedObject var musicManager: MusicManager
-    @Binding var song: SongStored //once again creating a connection between SongStored and DetailView 
+    @State var index : Int //once again creating a connection between SongStored and DetailView
     
     @State var isPlaying = false
  
     var body: some View {
-       
         
-        NavigationView{
+    
         VStack{
             ZStack{
                 AsyncImage(
-                    url: URL(string:song.artworkUrl100)!,
+                    url: URL(string:musicManager.allSongs[index].artworkUrl100)!,
                     content: { image in
                         image.resizable()
                             .scaledToFit()
@@ -36,7 +35,7 @@ struct DetailView: View {
                 )
             }
                 Spacer()
-            Text(song.artistName)
+            Text(musicManager.allSongs[index].artistName)
                     .fontWeight(.bold)
                     .font(.custom("AmericanTypewriter",
                                   fixedSize: 35))
@@ -57,7 +56,7 @@ struct DetailView: View {
             Button(action: { //attaches an action to the play and pause button through the variable isPlaying
                 isPlaying.toggle()
                 if isPlaying {
-                    musicManager.playSong(song: song)
+                    musicManager.playSong(song: musicManager.allSongs[index])
                 } else {
                     musicManager.stopSong()
                 }
@@ -68,13 +67,16 @@ struct DetailView: View {
                 
                 
             }
-            Button(action: { song.liked.toggle() }) {
-                Image(systemName: song.liked ? "heart.fill" : "heart").resizable() //this displays the heart button and uses the variable song to pass in songStored
+            Button(action: {
+                musicManager.updateLike(song: musicManager.allSongs[index])
+            }
+            ) {
+                Image(systemName: musicManager.allSongs[index].liked ? "heart.fill" : "heart").resizable() //this displays the heart button and uses the variable song to pass in songStored
             }
   
             .frame(width: 20, height: 20)
             .padding()
-            Text(song.songName)
+            Text(musicManager.allSongs[index].songName)
                     .font(.system(size: 20))
                     .minimumScaleFactor(0.005)
                     .frame(maxWidth:.infinity, maxHeight:.infinity)
@@ -84,7 +86,6 @@ struct DetailView: View {
                     .padding(15)
 
                    
-            }
        
             }
         }

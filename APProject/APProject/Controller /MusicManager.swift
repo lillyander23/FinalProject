@@ -13,7 +13,7 @@ import AVFoundation
 class MusicManager: ObservableObject{
     var player: AVAudioPlayer = AVAudioPlayer()
     @Published var allSongs : [SongStored] = []
-    
+    @Published var songs: [SongStored] = []
     
     init(){
         allSongs = songs(filtered: false)
@@ -32,25 +32,34 @@ class MusicManager: ObservableObject{
     }
     
     
-  func filter(liked: Bool) -> [SongStored] { //creates the function that filters the songs through the liked bool and the function songs, makes it possible to like a song and then click on a button to view the new filtered view, connects songs with either being liked or untouched
+  func filter(liked: Bool){ //creates the function that filters the songs through the liked bool and the function songs, makes it possible to like a song and then click on a button to view the new filtered view, connects songs with either being liked or untouched
         
         if liked {
-            
-            var likedSongs: [SongStored] = []
+            print("filtering")
+           
             
             for song in allSongs {
                 if song.liked == true{
-                    likedSongs.append(song)
+                    self.songs.append(song)
                 }
             }
-            return likedSongs
         } else {
-            return allSongs
+            print("not filtering")
+            self.songs = allSongs
         }
     }
     
-    func getIndex(song: SongStored){
+    func updateLike(song: SongStored){
+    
         // Figure out the index of the song we want to play in allSongs
+        var index = 0
+        for i in 0..<allSongs.count{
+            if allSongs[i].songName == song.songName{
+                index = i
+            }
+        }
+        
+        allSongs[index].liked.toggle()
     }
 
     

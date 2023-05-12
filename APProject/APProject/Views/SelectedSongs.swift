@@ -10,7 +10,7 @@ import SwiftUI
 struct SelectedSongs: View{
     @ObservedObject var musicManager : MusicManager
     
-  @Binding var song: SongStored
+  @State var index: Int
     
     var body: some View{
         
@@ -21,18 +21,18 @@ struct SelectedSongs: View{
             VStack{
                 
        
-                Text(song.artistName)
+                Text(musicManager.allSongs[index].artistName)
                     .fontWeight(.bold)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                     .foregroundColor(Color("AccentColor"))
                 Spacer()
-                Text(song.songName)
+                Text(musicManager.allSongs[index].songName)
                     .fontWeight(.semibold)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                     .foregroundColor(Color("AccentColor"))
                 
                 AsyncImage(
-                    url: URL(string:song.artworkUrl100)!,
+                    url: URL(string:musicManager.allSongs[index].artworkUrl100)!,
                     content: { image in
                         image.resizable()
                             .scaledToFit()
@@ -44,7 +44,7 @@ struct SelectedSongs: View{
                     }
                 )
                 HStack {
-                    Text("Release Date: \(song.releaseDate)")
+                    Text("Release Date: \(musicManager.allSongs[index].releaseDate)")
                         .font(.subheadline)
                         .foregroundColor(Color("AccentColor"))
                     
@@ -53,7 +53,7 @@ struct SelectedSongs: View{
                 }
                 HStack{
                     NavigationLink {
-                        DetailView(musicManager: musicManager, song:$song)
+                        DetailView(musicManager: musicManager, index: index)
                     } label: {
                         Text("")
                     }
